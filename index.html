@@ -1,0 +1,127 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@100;400;800&family=Pacifico&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Yummy</title>
+    </head>
+    <body class="  text-center p-0 m-0 z-0 ">
+      <div id="searchLoadScreen" class=" bg-black justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+    </div>
+      <div id="loadScreen" class=" bg-black justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+    </div>      
+
+    <div  id="view" class=" overflow-auto  py-4">
+ 
+
+      
+      
+    </div>
+
+
+        <div  class="d-flex flex-column p-4 justify-content-between  m-0 align-items-start   bg-black  " id="sideNavBar" >
+          <ul class="d-flex flex-column gap-3 bg-black align-items-start m-0 justify-content-start  px-0   "  >
+          
+            
+            <li id="nav1"  class="item text-white"  onclick="hideSection(),searchF() , closeNav()">search</li>
+            <li id="nav2" onclick="closeNav() , displayCat() , hideSection()" class="item text-white">categories</li>
+            <li id="nav3"  class="item text-white" onclick=" displayArea() ,closeNav() , hideSection() " >area</li>
+            <li id="nav4" onclick="closeNav() , hideSection() , displayingredients()" class="item text-white">ingredients</li>
+            <li id="nav5"  class="item text-white"  onclick="closeNav() , openContact(),hideSection() " >contact Us</li>
+          </ul>
+
+          <div>
+            <div class="d-flex gap-1 ">
+              
+
+              <a href="">
+              <i class="fa-brands fa-facebook text-white"></i>
+
+              </a>
+              <a href="">
+              <i class="fa-brands fa-twitter text-white"></i>
+
+              </a>
+              <a href="">
+              <i  class="fa-solid fa-globe d-block text-white"></i>
+
+              </a>
+
+
+
+
+            </div>
+            <p class="text-white text-start">
+              Copyright Â© 2019 All Rights
+              Reserved.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="bg-white py-3 d-flex flex-column position-fixed justify-content-between align-items-center   px-2" id="slideNavBar">
+          
+            <div class="logoCont">
+              <img src="images/logo.png" class="img-fluid" alt="logo">
+            </div>
+          <div id="open" class="Icon">
+            <div id="navIcon">
+              <i  class="fa-solid fa-bars text-black"></i> 
+            </div>
+          </div>
+
+
+          <div>
+            <a  href="">
+              <i class="fa-solid fa-globe d-block text-black mb-2"></i>
+
+            </a>
+            <a href="">
+            <i class="fa-solid fa-share-nodes d-block text-black"></i>
+
+            </a>
+          </div>
+            
+          </div>
+
+
+
+          <section class="p-5 ms-4  text-center">
+ 
+            <div class="container ">
+              <div class="row g-3" id="meal">
+                
+
+
+               
+
+                
+                
+
+              </div>
+            </div>
+          </section>
+    
+
+
+
+    
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.7.1.min.js"></script>
+
+        <script src="js/index.js"></script>
+       
+    </body>
+</html>
+
